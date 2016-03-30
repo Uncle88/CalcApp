@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CalculApp.MyPage">
+	<ContentPage.Content>
+
+	<Grid BackgroundColor="White">
+
+	<Label Text="________________________________" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Start"/>
+	<Label Text="Calculate Tip" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Gray"/>
+
+
+	<Grid.RowDefinitions>  
+	 				  <RowDefinition Height="10*" />
+	 				  <RowDefinition Height="1*" />
+					  <RowDefinition Height="5*" />
+   					  <RowDefinition Height="5*" />
+    				  <RowDefinition Height="5*" />
+    </Grid.RowDefinitions>
+    				  
+      <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*" />
+                    
+                     
+      </Grid.ColumnDefinitions>
+
+     <Label Text="Tip Persentage" FontSize="20" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="End" />
+	<Label Text="Tip Amount" FontSize="20" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
+	<Label Text="Total Amount" FontSize="20" TextColor="Lime" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
+
+
+
+      <!--         
+	<Label Text="________________________________" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+	<Label Text="Calculate Tip" FontSize="30" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Gray"/>
+
+	<Label Text="Tip Persentage" FontSize="20" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" />
+	<Label Text="Tip Amount" FontSize="20" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
+	<Label Text="Total Amount" FontSize="20" TextColor="Lime" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
+	-->
+
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculApp", "CalculApp\CalculApp.csproj", "{ED271769-E1D5-4E04-952C-DE0550645363}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculApp.Droid", "Droid\CalculApp.Droid.csproj", "{1160BD6E-9DC5-4C4A-AD7F-9561F35B5021}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1160BD6E-9DC5-4C4A-AD7F-9561F35B5021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1160BD6E-9DC5-4C4A-AD7F-9561F35B5021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1160BD6E-9DC5-4C4A-AD7F-9561F35B5021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1160BD6E-9DC5-4C4A-AD7F-9561F35B5021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED271769-E1D5-4E04-952C-DE0550645363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED271769-E1D5-4E04-952C-DE0550645363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED271769-E1D5-4E04-952C-DE0550645363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED271769-E1D5-4E04-952C-DE0550645363}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
