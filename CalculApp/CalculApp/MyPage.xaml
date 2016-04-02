@@ -17,23 +17,23 @@
                       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
                 <!-- Row 0 -->   
-    	<Entry Grid.Row="0" Grid.Column="0" Placeholder="Subtotal" HorizontalTextAlignment="End" VerticalTextAlignment="Center"  />
+    	<Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="End" VerticalTextAlignment="Center"  />
  				<!-- Row 1 --> 
  	    <Button Text="Calculate Tip" Grid.Row="1" Grid.Column="0" BackgroundColor="Gray" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
  				<!-- Row 2 --> 
- 				<Label Text="Tip Percentage:" Grid.Row="2" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
-		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" Padding="10, 10, 40, 10">
-			<Label Text="{Binding TipPercentage,&#xA;StringFormat='{0:C}'}" Font="Large" HorizontalTextAlignment="End" />
+ 				<Label Text="Tip Percentage:" Grid.Row="2" Grid.Column="0"  HorizontalTextAlignment="End" Font="Large"  VerticalTextAlignment="Center" />
+		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" >
+			<Label    HorizontalTextAlignment="End" BackgroundColor="Olive" />
 		</ContentView>
  				<!-- Row 3 --> 
  				<Label Text="Tip Amount:" Grid.Row="3" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
-		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" Padding="10, 10, 40, 10">
-			<Label Text="{Binding TipAmount,&#xA; StringFormat='{0:C}'}" Font="Large" HorizontalTextAlignment="End" />
+		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" >
+			<Label  HorizontalTextAlignment="End" BackgroundColor="Olive" />
 		</ContentView>
  				<!-- Row 4 --> 
  				<Label Text="Total Amount:" Grid.Row="4" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
-		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" Padding="10, 10, 40, 10">
-			<Label Text="{Binding TotalAmount,&#xA;StringFormat='{0:C}'}" Font="Large" HorizontalTextAlignment="End" />
+		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" >  
+			<Label HorizontalTextAlignment="End" BackgroundColor="Olive"/>
 		</ContentView>
  			
 
