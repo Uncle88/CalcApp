@@ -1,10 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CalculApp.MyPage">
 	<ContentPage.Content>
-
 	<Grid BackgroundColor="White">
-
-
 	<Grid.RowDefinitions>  
 	 				  <RowDefinition Height="Auto" />
 	 				  <RowDefinition Height="Auto" />
@@ -17,37 +14,24 @@
                       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
                 <!-- Row 0 -->   
-    	<Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="End" VerticalTextAlignment="Center"  />
- 				<!-- Row 1 --> 
- 	    <Button Text="Calculate Tip" Grid.Row="1" Grid.Column="0" BackgroundColor="Gray" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+    	<Entry  Grid.Row="0" Grid.Column="0" HorizontalOptions="End" VerticalOptions="Center"/>
+ 				<!-- Row 1  --> 
+ 	    <Button Text="Calculate Tip" Grid.Column="0" Grid.Row="1" BackgroundColor="Fuchsia" HorizontalOptions="Fill" VerticalOptions="Center"/>
  				<!-- Row 2 --> 
- 				<Label Text="Tip Percentage:" Grid.Row="2" Grid.Column="0"  HorizontalTextAlignment="End" Font="Large"  VerticalTextAlignment="Center" />
-		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" >
-			<Label    HorizontalTextAlignment="End" BackgroundColor="Olive" />
+ 				<Label Text="Tip Percentage:" Grid.Row="2" Grid.Column="0" Font="Large"  HorizontalOptions="End" VerticalOptions="Center" />
+		<ContentView BackgroundColor="#40808080" Grid.Row="2" Grid.Column="1" >
+			<Label    HorizontalOptions="End" BackgroundColor="Olive" />
 		</ContentView>
  				<!-- Row 3 --> 
- 				<Label Text="Tip Amount:" Grid.Row="3" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
-		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" >
-			<Label  HorizontalTextAlignment="End" BackgroundColor="Olive" />
+ 				<Label Text="Tip Amount:" Grid.Row="3" Grid.Column="0" Font="Large" HorizontalOptions="End" VerticalOptions="Center" />
+		<ContentView BackgroundColor="#40808080" Grid.Row="3" Grid.Column="1" >
+			<Label  HorizontalOptions="End" BackgroundColor="Olive" />
 		</ContentView>
  				<!-- Row 4 --> 
- 				<Label Text="Total Amount:" Grid.Row="4" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+ 				<Label Text="Total Amount:" Grid.Row="4" Grid.Column="0" Font="Large" HorizontalOptions="End" VerticalOptions="Center" />
 		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" >  
-			<Label HorizontalTextAlignment="End" BackgroundColor="Olive"/>
+			<Label HorizontalOptions="End" BackgroundColor="Olive"/>
 		</ContentView>
- 			
-
-    
 	</Grid>
-
-      <!--         
-	<Label Text="________________________________" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-	<Label Text="Calculate Tip" FontSize="30" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Gray"/>
-
-	<Label Text="Tip Persentage" FontSize="20" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" />
-	<Label Text="Tip Amount" FontSize="20" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
-	<Label Text="Total Amount" FontSize="20" TextColor="Lime" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
-	-->
-
 	</ContentPage.Content>
 </ContentPage>
