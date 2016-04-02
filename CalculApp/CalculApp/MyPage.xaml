@@ -4,29 +4,41 @@
 
 	<Grid BackgroundColor="White">
 
-	<Label Text="________________________________" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Start"/>
-	<Label Text="Calculate Tip" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Gray"/>
-
 
 	<Grid.RowDefinitions>  
-	 				  <RowDefinition Height="10*" />
-	 				  <RowDefinition Height="1*" />
-					  <RowDefinition Height="5*" />
-   					  <RowDefinition Height="5*" />
-    				  <RowDefinition Height="5*" />
+	 				  <RowDefinition Height="Auto" />
+	 				  <RowDefinition Height="Auto" />
+					  <RowDefinition Height="Auto" />
+   					  <RowDefinition Height="Auto" />
+    				  <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
-    				  
-      <Grid.ColumnDefinitions>
+    <Grid.ColumnDefinitions>
                       <ColumnDefinition Width="*" />
-                    
-                     
-      </Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+                <!-- Row 0 -->   
+    	<Entry Grid.Row="0" Grid.Column="0" Placeholder="Subtotal" HorizontalTextAlignment="End" VerticalTextAlignment="Center"  />
+ 				<!-- Row 1 --> 
+ 	    <Button Text="Calculate Tip" Grid.Row="1" Grid.Column="0" BackgroundColor="Gray" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+ 				<!-- Row 2 --> 
+ 				<Label Text="Tip Percentage:" Grid.Row="2" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" Padding="10, 10, 40, 10">
+			<Label Text="{Binding TipPercentage,&#xA;StringFormat='{0:C}'}" Font="Large" HorizontalTextAlignment="End" />
+		</ContentView>
+ 				<!-- Row 3 --> 
+ 				<Label Text="Tip Amount:" Grid.Row="3" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" Padding="10, 10, 40, 10">
+			<Label Text="{Binding TipAmount,&#xA; StringFormat='{0:C}'}" Font="Large" HorizontalTextAlignment="End" />
+		</ContentView>
+ 				<!-- Row 4 --> 
+ 				<Label Text="Total Amount:" Grid.Row="4" Grid.Column="0" Font="Large" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+		<ContentView BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" Padding="10, 10, 40, 10">
+			<Label Text="{Binding TotalAmount,&#xA;StringFormat='{0:C}'}" Font="Large" HorizontalTextAlignment="End" />
+		</ContentView>
+ 			
 
-     <Label Text="Tip Persentage" FontSize="20" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="End" />
-	<Label Text="Tip Amount" FontSize="20" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
-	<Label Text="Total Amount" FontSize="20" TextColor="Lime" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
-
-
+    
+	</Grid>
 
       <!--         
 	<Label Text="________________________________" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
