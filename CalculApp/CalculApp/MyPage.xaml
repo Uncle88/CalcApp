@@ -13,16 +13,17 @@
                       <ColumnDefinition Width="*" />
                       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
-                <!-- Row 0 -->   
-    	<Entry  Grid.Row="0" Grid.Column="0" HorizontalOptions="End" VerticalOptions="Center"/>
+                <!-- Row 0  Padding="10, 10, 40, 10"   -->   
+    	<Entry  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Black" WidthRequest="200" />
+
  				<!-- Row 1  --> 
- 	    <Button Text="Calculate Tip" Grid.Column="0" Grid.Row="1" BackgroundColor="Fuchsia" HorizontalOptions="Fill" VerticalOptions="Center"/>
+ 	    <Button Text="Calculate Tip" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="Fuchsia" HorizontalOptions="Center" VerticalOptions="Center"/>
  				<!-- Row 2 --> 
  				<Label Text="Tip Percentage:" Grid.Row="2" Grid.Column="0" Font="Large"  HorizontalOptions="End" VerticalOptions="Center" />
-		<ContentView BackgroundColor="#40808080" Grid.Row="2" Grid.Column="1" >
-			<Label    HorizontalOptions="End" BackgroundColor="Olive" />
-		</ContentView>
- 				<!-- Row 3 --> 
+		
+			<Label  Grid.Row="2" Grid.Column="1"    HorizontalOptions="End" BackgroundColor="#40808080" />
+		
+
  				<Label Text="Tip Amount:" Grid.Row="3" Grid.Column="0" Font="Large" HorizontalOptions="End" VerticalOptions="Center" />
 		<ContentView BackgroundColor="#40808080" Grid.Row="3" Grid.Column="1" >
 			<Label  HorizontalOptions="End" BackgroundColor="Olive" />
