@@ -17,19 +17,18 @@
                       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
 
-        <!-- Row 0  Padding="10, 10, 40, 10"   -->   
-    			<Entry  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Opacity="1" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White" WidthRequest="200" />
- 		<!-- Row 1  --> 
- 	    		<Button Text="Calculate Tip" TextColor="Black" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="Silver" HorizontalOptions="Center" VerticalOptions="Center" />
- 		<!-- Row 2 --> 
- 				<Label Text="Tip Percentage:" Grid.Row="2" Grid.Column="0" Font="Large"  HorizontalOptions="End" VerticalOptions="Center" />
+    			<Entry x:Name="_entry"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White" WidthRequest="200" />
+ 	
+ 	    		<Button x:Name="_button" Text="Calculate Tip" TextColor="Black" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="Silver" HorizontalOptions="Center" VerticalOptions="Center" />
+ 
+ 				<Label  Text="Tip Percentage:" Grid.Row="2" Grid.Column="0" Font="Large"  HorizontalOptions="End" VerticalOptions="Center" />
      			<Label  Grid.Row="2" Grid.Column="1"    HorizontalOptions="Center"  Text="17%" />
-		<!--BackgroundColor="#40808080" Grid.Row="3" Grid.Column="1"  -->
+	
  				<Label Text="Tip Amount:" Grid.Row="3" Grid.Column="0" Font="Large" HorizontalOptions="End" VerticalOptions="Center" />
-			    <Label Grid.Row="3" Grid.Column="1"  HorizontalOptions="Center"  Text="$4.19" />
- 		<!--BackgroundColor="#40808080" Grid.Row="4" Grid.Column="1" --> 
+			    <Label x:Name="_tip" Grid.Row="3" Grid.Column="1"  HorizontalOptions="Center"   />
+
  				<Label Text="Total Amount:"  TextColor="Lime" Grid.Row="4" Grid.Column="0" Font="Large" HorizontalOptions="End" VerticalOptions="Center" />
-			    <Label HorizontalOptions="Center"  Grid.Row="4" Grid.Column="1" Text="$28.82" TextColor="Lime" />
+			    <Label x:Name="_totalSum" HorizontalOptions="Center"  Grid.Row="4" Grid.Column="1"  TextColor="Lime" />
 		
 	</Grid>
 	</ContentPage.Content>
