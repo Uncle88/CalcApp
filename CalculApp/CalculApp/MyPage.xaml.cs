@@ -17,7 +17,7 @@ namespace CalculApp
 
 		void _button_Clicked (object sender, EventArgs e)
 		{
-			var	text = (double.Parse (_entry.Text)).ToString();
+			var	text = (double.Parse(_entry.Text)).ToString();
 
 			var	_tip = (text * 17 / 100).ToString ();
 
